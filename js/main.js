@@ -100,8 +100,8 @@
 
 //11-masala
 
-let arr = [1, 2, 3, 2, 1];
-function rever() {
-  return arr.join() === arr.toReversed().join();
-}
-console.log(rever([1, 2, 3, 2, 1]));
+// let arr = [1, 2, 3, 2, 1];
+// function rever() {
+//   return arr.join() === arr.toReversed().join();
+// }
+// console.log(rever([1, 2, 3, 2, 1]));
