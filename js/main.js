@@ -87,7 +87,21 @@
 
 //9-masala
 
-let arr = ["HTML", "JS", "CSS", "JS", "React", "JS"];
-for (let i = 0; i < arr.length; i++) {
-  console.log(`${arr[i]} ${arr.indexOf(arr[i])}`);
+// let arr = ["HTML", "JS", "CSS", "JS", "React", "JS"];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(`${arr[i]} ${arr.indexOf(arr[i])}`);
+// }
+
+//10-masala
+
+// let arr = [1, 2, 3, 4, 5];
+// let n = arr.splice(-2);
+// console.log(arr);
+
+//11-masala
+
+let arr = [1, 2, 3, 2, 1];
+function rever() {
+  return arr.join() === arr.toReversed().join();
 }
+console.log(rever([1, 2, 3, 2, 1]));
