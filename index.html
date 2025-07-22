@@ -4,8 +4,793 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style type="text/tailwindcss"></style>
   </head>
   <body>
+    <header class="header bg-[#000000EB]">
+      <div class="containers flex items-center justify-between py-[45px]">
+        <a href="/"
+          ><img
+            class="w-[200px] h-[24px] md:w-[267px] md:h-[31px]"
+            src="./images/site-logo.svg"
+            alt=""
+        /></a>
+        <ul class="hidden md:flex justify-between items-center gap-20">
+          <li
+            class="font-medium text-[16px]leading-[100%] text-white decoration-3"
+          >
+            <a href=""> Как купить</a>
+          </li>
+          <li
+            class="font-medium text-[16px]leading-[100%] text-white decoration-1"
+          >
+            <a href=""> F.A.Q</a>
+          </li>
+          <li
+            class="font-medium text-[16px]leading-[100%] text-white decoration-1"
+          >
+            <a href=""> Контакты</a>
+          </li>
+        </ul>
+        <div class="flex gap-[34px]">
+          <div class="flex items-center gap-5">
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 22L15 15M17.3333 9.16667C17.3333 13.677 13.677 17.3333 9.16667 17.3333C4.65634 17.3333 1 13.677 1 9.16667C1 4.65634 4.65634 1 9.16667 1C13.677 1 17.3333 4.65634 17.3333 9.16667Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <button
+              class="hidden xl:block text-[16px] leading-[100%] text-white border-[2px] border-solid border-white rounded-[50px] px-[35px] py-[13px] bg-[#000000EB] ml-[34px]"
+            >
+              Регистрация
+            </button>
+            <button
+              class="hidden xl:block font-bold text-[16px] leading-[100%] text-white border-[2px] border-solid border-[#000000] rounded-[50px] px-[35px] py-[13px] bg-[#EC8F32] ml-[34px]"
+            >
+              Войти
+            </button>
+          </div>
+          <div class="xl:hidden dropdown">
+            <div
+              class="md:w-[40px] w-[30px] md:h-[7px] h-[4px] bg-[white] rounded-[2px] md:rounded-[5px] my-[4px] md:my-[7px]"
+            ></div>
+            <div
+              class="md:w-[40px] w-[30px] md:h-[7px] h-[4px] bg-[white] rounded-[2px] md:rounded-[5px] my-[4px] md:my-[7px]"
+            ></div>
+            <div
+              class="md:w-[40px] w-[30px] md:h-[7px] h-[4px] bg-[white] rounded-[2px] md:rounded-[5px] my-[4px] md:my-[7px]"
+            ></div>
+            <div class="text-center dropdown-content mr-[0px]">
+              <ul class="md:hidden">
+                <li
+                  class="font-medium text-[16px]leading-[100%] text-white decoration-3"
+                >
+                  <a href="">Как купить</a>
+                </li>
+                <li
+                  class="font-medium text-[16px]leading-[100%] text-white decoration-3"
+                >
+                  <a href=""></a>F.A.Q
+                </li>
+                <li
+                  class="font-medium text-[16px]leading-[100%] text-white decoration-3"
+                >
+                  <a href=""></a>Контакты
+                </li>
+              </ul>
+              <button
+                class="text-[16px] mb-[10px] leading-[100%] text-white border-[2px] border-solid border-white rounded-[50px] px-[35px] py-[13px] bg-[#000000EB]"
+              >
+                Регистрация
+              </button>
+              <button
+                class="font-bold text-[16px] leading-[100%] text-white border-[2px] border-solid border-[#000000] rounded-[50px] px-[35px] py-[13px] bg-[#EC8F32]"
+              >
+                Войти
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site-main bg-[#000000EB]">
+      <section class="hero-section pt-[167px] pb-[173px]">
+        <div class="containers hero flex-wrap flex gap-20 items-center">
+          <div class="">
+            <h1
+              class="font-bold max-w-[778px] text-[38px] md:text-[62px] leading-[60px] text-[#FFFFFF6B]"
+            >
+              Книги, которые вам хочется слушать
+            </h1>
+            <p
+              class="font-medium max-w-[547px] mt-[14px] mb-[37px] tetx-[21px] md:text-[24px] leading-[100%] text-[#FFFFFF]"
+            >
+              Лучшая подборка аудиокниг по психологиии саморазвитию за все годы
+              издательства...
+            </p>
+            <div class="flex gap-4 items-center dots">
+              <svg
+                class="dot cursor-pointer"
+                data-bg="./images/hero-bg1.png"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+              >
+                <circle cx="6" cy="6" r="6" fill="white" />
+              </svg>
+              <svg
+                class="dot cursor-pointer"
+                data-bg="./images/hero-bg2.png"
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+              >
+                <circle cx="9.5" cy="9.5" r="9.5" fill="#EC8F32" />
+              </svg>
+              <svg
+                class="dot cursor-pointer"
+                data-bg="./images/hero-bg3.png"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+              >
+                <circle cx="6" cy="6" r="6" fill="white" />
+              </svg>
+            </div>
+          </div>
+          <button
+            class="font-bold mx-auto h-[63px] md:h-[79px] items-center flex rounded-[50px] text-[18px] md:text-[24px] leading-[100%] text-[#FFFFFF] bg-[#EC8F32] px-[41px] py-[27.5px]"
+          >
+            Выбрать книгу
+          </button>
+        </div>
+      </section>
+      <section class="new-section pb-[97px] pt-[104px]">
+        <div class="containers">
+          <div class="flex items-center justify-between">
+            <h2 class="font-medium text-[32px] leading-[100%] text-white">
+              Новинки
+            </h2>
+            <button
+              class="font-bold px-[29px] py-[9px] text-[12px] bg-[#EC8F32] rounded-[50px] text-white"
+            >
+              Смотреть все
+            </button>
+          </div>
+          <div
+            class="mt-[38px] flex flex-wrap gap-5 items-center justify-between"
+          >
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/new-section-1.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Ульяна Соболева
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Завтра будет <br />
+                вчера</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/new-section-2.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Линкольн Чайлд,
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Низший. Книга <br />
+                шестая</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/new-section-3.png"
+                alt=""
+              />
+
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Жена <br />
+                башмачника</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[170px] h-[200px] rounded-[20px]"
+                src="./images/new-section-4.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">Лира Алая</p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Ночная смена.<br />
+                Крепость живых...</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/new-section-5.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Маргарет Митчелл
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Агасфер. <br />
+                Старьевщик</strong
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular-section">
+        <div class="containers">
+          <div class="flex flex-wrap gap-5 items-center justify-between">
+            <h2 class="font-medium text-[32px] leading-[100%] text-white">
+              Популярное
+            </h2>
+            <button
+              class="font-bold px-[29px] py-[9px] text-[12px] bg-[#EC8F32] rounded-[50px] text-white"
+            >
+              Смотреть все
+            </button>
+          </div>
+          <div
+            class="mt-[38px] flex flex-wrap gap-5 items-center justify-between"
+          >
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-1.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Ульяна Соболева
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Унесенные ветром. <br />
+                Часть вторая</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-2.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Линкольн Де Милош...
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Алмазная<br />
+                колесница</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-3.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Джефф Линдсей/
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >«Линкольн» для<br />
+                адвоката</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-4.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">Лира Алая</p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Не твоя Людмила
+              </strong>
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-5.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Маргарет Митчелл
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Тьма императора.<br />
+                Книга вторая</strong
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="choice-section pb-[97px] pt-[104px]">
+        <div class="containers">
+          <div class="flex flex-wrap gap-5 items-center justify-between">
+            <h2 class="font-medium text-[32px] leading-[100%] text-white">
+              Выбор редакции
+            </h2>
+            <button
+              class="font-bold px-[29px] py-[9px] text-[12px] bg-[#EC8F32] rounded-[50px] text-white"
+            >
+              Смотреть все
+            </button>
+          </div>
+          <div
+            class="mt-[38px] flex flex-wrap gap-5 items-center justify-between"
+          >
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-1.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Ульяна Соболева
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Унесенные ветром.<br />
+                Часть вторая</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-2.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Линкольн Чайлд,
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Алмазная <br />
+                колесница</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-3.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">Джефф Линдсей</p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >«Линкольн» для <br />
+                адвоката</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-4.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">Лира Алая</p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Не твоя Людмила</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-5.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Маргарет Митчелл
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Тьма императора. <br />
+                Книга вторая.</strong
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular-section">
+        <div class="containers">
+          <div class="flex flex-wrap gap-5 items-center justify-between">
+            <h2 class="font-medium text-[32px] leading-[100%] text-white">
+              Новинки
+              <span class="text-[#EC8F32]">Популярное Выбор редакции </span>
+            </h2>
+            <button
+              class="font-bold px-[29px] py-[9px] text-[12px] bg-[#EC8F32] rounded-[50px] text-white"
+            >
+              Смотреть все
+            </button>
+          </div>
+          <div
+            class="mt-[38px] flex flex-wrap gap-5 items-center justify-between"
+          >
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-1.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Ульяна Соболева
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Унесенные ветром.<br />
+                Часть вторая</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-2.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Линкольн Чайлд,
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Алмазная <br />
+                колесница</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-3.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">Джефф Линдсей</p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >«Линкольн» для <br />
+                адвоката</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-4.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">Лира Алая</p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Не твоя Людмила</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/choice-section-5.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Маргарет Митчелл
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Тьма императора. <br />
+                Книга вторая.</strong
+              >
+            </div>
+          </div>
+          <div
+            class="mt-[38px] flex flex-wrap gap-5 items-center justify-between"
+          >
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-1.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Ульяна Соболева
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Унесенные ветром. <br />
+                Часть вторая</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-2.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Линкольн Де Милош...
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Алмазная<br />
+                колесница</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-3.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Джефф Линдсей/
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >«Линкольн» для<br />
+                адвоката</strong
+              >
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-4.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">Лира Алая</p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Не твоя Людмила
+              </strong>
+            </div>
+            <div>
+              <img
+                class="w-[200px] h-[200px] rounded-[20px]"
+                src="./images/popular-section-5.png"
+                alt=""
+              />
+              <p class="font-light text-[16px] text-[#ADADAD]">
+                Маргарет Митчелл
+              </p>
+              <strong class="font-medium text-[21px] text-[#FFFFFF]"
+                >Тьма императора.<br />
+                Книга вторая</strong
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="collections-section pb-[159px]">
+        <div class="containers">
+          <h2
+            class="font-medium text-[32px] leading-[100%] text-[#ffffff] mt-[120px] mb-[39px]"
+          >
+            Подборки
+          </h2>
+          <div class="flex flex-wrap gap-5 justify-between items-center">
+            <div
+              class="collections-section-1 rounded-[25px] w-[273px] h-[163px] pt-[89px] pr-[136px] pb-[14px] pl-[30px]"
+            >
+              <strong
+                class="font-bold text-[24px] leading-[60px] text-[#FFFFFF]"
+                >В дороге</strong
+              >
+            </div>
+            <div
+              class="collections-section-2 rounded-[25px] w-[273px] h-[163px] pt-[89px] pr-[97px] pb-[14px] pl-[31px]"
+            >
+              <strong
+                class="font-bold text-[24px] leading-[60px] text-[#FFFFFF]"
+                >Для отдыха</strong
+              >
+            </div>
+            <div
+              class="collections-section-3 rounded-[25px] w-[273px] h-[163px] pt-[89px] pr-[112px] pb-[14px] pl-[31px]"
+            >
+              <strong
+                class="font-bold text-[24px] leading-[60px] text-[#FFFFFF]"
+                >Для учебы</strong
+              >
+            </div>
+            <div
+              class="collections-section-4 rounded-[25px] w-[273px] h-[163px] pt-[89px] pr-[97px] pb-[14px] pl-[31px]"
+            >
+              <strong
+                class="font-bold text-[24px] leading-[60px] text-[#FFFFFF]"
+                >Для работы</strong
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="connect-section">
+        <div class="containers connect flex-wrap md:flex justify-between gap-5">
+          <div
+            class="max-w-[582px] mt-[30px] py-[55px] mx-auto xl:mx-0 flex justify-center opacity-[60%] rounded-[25px] border-[2.5px] border-[#FFFFFF4D] items-center px-[60px] gap-[60px]"
+          >
+            <img
+              class="w-[40px] h-[30px] sm:w-[58px] sm:h-[47px]"
+              src="./images/connect-tg.svg"
+              alt=""
+            />
+            <strong
+              class="font-medium text-[16px] sm:text-[21px] leading-[28px] text-[#FFFFFF]"
+              >Все лучшие новинки нон фикшн книг и образовательные саммари
+              всегда под рукой.</strong
+            >
+          </div>
+          <div
+            class="max-w-[582px] mt-[30px] py-[55px] mx-auto xl:mx-0 flex justify-center opacity-[60%] rounded-[25px] border-[2.5px] border-[#FFFFFF4D] items-center px-[60px] gap-[60px]"
+          >
+            <img
+              class="w-[40px] h-[30px] sm:w-[58px] sm:h-[47px]"
+              src="./images/connect-saved.svg"
+              alt=""
+            />
+            <strong
+              class="font-medium text-[16px] sm:text-[21px] leading-[28px] text-[#FFFFFF]"
+              >Аудиокнига по дороге на работу и обратно, подарит вам почти месяц
+              чтения за год</strong
+            >
+          </div>
+          <div
+            class="max-w-[582px] mt-[30px] py-[55px] mx-auto xl:mx-0 flex justify-center opacity-[60%] rounded-[25px] border-[2.5px] border-[#FFFFFF4D] items-center px-[60px] gap-[60px]"
+          >
+            <img
+              class="w-[40px] h-[30px] sm:w-[58px] sm:h-[47px]"
+              src="./images/connect-musc.svg"
+              alt=""
+            />
+            <strong
+              class="font-medium text-[16px] sm:text-[21px] leading-[28px] text-[#FFFFFF]"
+              >Аудиокниги позволяют «читать» несколько часов в день без отрыва
+              от текущих дел.</strong
+            >
+          </div>
+          <div
+            class="max-w-[582px] mt-[30px] py-[55px] mx-auto xl:mx-0 flex justify-center opacity-[60%] rounded-[25px] border-[2.5px] border-[#FFFFFF4D] items-center px-[60px] gap-[60px]"
+          >
+            <img
+              class="w-[40px] h-[30px] sm:w-[58px] sm:h-[47px]"
+              src="./images/connect-notepad.svg"
+              alt=""
+            />
+            <strong
+              class="font-medium text-[16px] sm:text-[21px] leading-[28px] text-[#FFFFFF]"
+              >Лучшие книги и аудиоспектакли в живом исполнении</strong
+            >
+          </div>
+        </div>
+      </section>
+      <section class="brend-section">
+        <div
+          class="containers flex flex-wrap items-center justify-between gap-20 mt-[166px] pb-[165px]"
+        >
+          <img src="./images/bren-section-netflix.svg" alt="" />
+          <img src="./images/bren-section-amazon.svg" alt="" />
+          <img src="./images/bren-section-avon.svg" alt="" />
+          <img src="./images/bren-section-audi.svg" alt="" />
+          <img src="./images/bren-section-dell.svg" alt="" />
+        </div>
+      </section>
+      <section class="daily-section">
+        <div class="containers flex flex-col xl:flex-row items-center">
+          <img src="./images/daily-section-1.png" alt="" />
+          <div
+            class="daily-wrapper p-[10px] xl:pl-[74px] border border-[#3A3A47] rounded-[12px] overflow-hidden items-center flex flex-col md:flex-row justify-between gap-5 lg:gap-[120px]"
+          >
+            <div class="text-center sm:text-start">
+              <h2 class="font-bold text-[32px] leading-[60px] text-[#FFFFFF47]">
+                Eжедневное <span class="text-[#FFFFFF]">преимущество!</span>
+              </h2>
+              <strong
+                class="font-light text-[18px] leading-[121%] text-[#FFFFFF]"
+                >Даже полтора часа в день (в среднем столько занимает время
+                <br />
+                на дорогу в мегаполисе на работу и домой), посвященных <br />
+                аудиочтению!</strong
+              >
+            </div>
+            <button
+              class="font-bold items-center rounded-[50px] text-[18px] md:text-[24px] leading-[100%] text-[#FFFFFF] bg-[#EC8F32] px-[41px] py-[27.5px]"
+            >
+              Получить скидку
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#0C0C13] text-[#A1A1AA] text-sm pt-12 pb-6">
+      <div class="containers">
+        <div
+          class="border-t border-[#3A3A47] pt-12 flex flex-wrap gap-12 justify-between"
+        >
+          <div class="font-bold text-white text-lg w-full sm:w-auto">
+            АУДИТЕРИЯ
+          </div>
+          <div class="min-w-[150px]">
+            <h3 class="text-white font-semibold mb-3">Жанры</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Нонфикшн</a></li>
+              <li><a href="#" class="hover:underline">Психология</a></li>
+              <li><a href="#" class="hover:underline">Бизнес</a></li>
+              <li><a href="#" class="hover:underline">Финансы</a></li>
+              <li><a href="#" class="hover:underline">Все жанры</a></li>
+            </ul>
+          </div>
+
+          <!-- Kategoriyalar -->
+          <div class="min-w-[150px]">
+            <h3 class="text-white font-semibold mb-3">Категории</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Популярное</a></li>
+              <li><a href="#" class="hover:underline">Новинки</a></li>
+              <li><a href="#" class="hover:underline">Выбор редакции</a></li>
+            </ul>
+          </div>
+
+          <!-- Bo‘limlar -->
+          <div class="min-w-[150px]">
+            <h3 class="text-white font-semibold mb-3">Разделы</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Как купить</a></li>
+              <li>
+                <a href="#" class="hover:underline">Часто задаваемые вопросы</a>
+              </li>
+              <li><a href="#" class="hover:underline">Сотрудничество</a></li>
+              <li><a href="#" class="hover:underline">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pastki qism -->
+        <div
+          class="border-t border-[#3A3A47] mt-8 pt-4 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <!-- Chap -->
+          <div class="text-xs text-[#6B7280]">
+            © 2022, «Аудитерия». Все права защищены.
+          </div>
+          <div class="flex gap-3 text-xs">
+            <a href="#" class="hover:underline">Политика конфиденциальности</a>
+            <span class="text-[#4B5563]">|</span>
+            <a href="#" class="hover:underline">Лицензионное соглашение</a>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="text-white font-semibold text-base">VISA</span>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+              alt="MasterCard"
+              class="h-5 opacity-70"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/main.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </body>
 </html>

@@ -1,0 +1,96 @@
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ubuntu-v20-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/ubuntu-v20-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ubuntu-v20-latin-700.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+.containers {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0;
+  background-color: rgb(130, 197, 29);
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero-section {
+  background-image: url(../images/hero-bg1.png);
+  /* url(../images/hero-bg1-responsive.jpg); */
+  background-repeat: no-repeat 0;
+  background-size: cover none;
+}
+@media (max-width: 900px) {
+  .hero-section {
+    background-image: url(../images/hero-bg1-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 600px) {
+  .hero-section {
+    background-image: url(../images/hero-bg1-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.collections-section-1 {
+  background-image: url(../images/collections-section-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collections-section-2 {
+  background-image: url(../images/collections-section-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collections-section-3 {
+  background-image: url(../images/collections-section-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collections-section-4 {
+  background-image: url(../images/collections-section-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .daily-wrapper {
+  border: 1px 1px 1px 0 solid red;
+} */
